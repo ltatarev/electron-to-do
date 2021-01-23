@@ -1,6 +1,58 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+  background-color: rgb(44, 44, 44);
+}
+
+p {
+  margin-bottom: 0;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+input {
+  margin: 0;
+}
+
+#title {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.todo {
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.todo-completed {
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  text-decoration: line-through;
+  color: grey;
+}
+
+.input {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  border-color: white;
+}
+
+.input:focus {
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+#clear-completed {
+  background-color: transparent;
+  color: red;
+}
+
+#clear-completed:hover {
+  cursor: pointer;
+  color: pink;
 }
