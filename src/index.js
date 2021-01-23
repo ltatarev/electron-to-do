@@ -14,6 +14,8 @@ const createWindow = () => {
     width: 400,
     minWidth: 400,
     height: 500,
+    backgroundColor: "#2C2C2C",
+    show: false,
     webPreferences: {
       nodeIntegration: true,
     },
@@ -21,7 +23,9 @@ const createWindow = () => {
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, "index.html"));
-
+  mainWindow.once("ready-to-show", () => {
+    mainWindow.show();
+  });
   Store.initRenderer();
 
   // Open the DevTools.
