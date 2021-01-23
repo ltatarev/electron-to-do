@@ -1,6 +1,6 @@
 {
   "name": "electron-to-do",
-  "productName": "electron-to-do",
+  "productName": "Tasks",
   "version": "1.0.0",
   "description": "Electron to do app",
   "main": "src/index.js",
@@ -19,7 +19,9 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "content/post-it.icns"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",

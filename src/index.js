@@ -11,8 +11,9 @@ if (require("electron-squirrel-startup")) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 400,
+    minWidth: 400,
+    height: 500,
     webPreferences: {
       nodeIntegration: true,
     },
@@ -24,9 +25,7 @@ const createWindow = () => {
   Store.initRenderer();
 
   // Open the DevTools.
-  if (process.env !== "production") {
-    mainWindow.webContents.openDevTools();
-  }
+  // mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
