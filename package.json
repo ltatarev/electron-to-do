@@ -8,13 +8,12 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "publish": "electron-forge publish"
   },
   "keywords": [],
   "author": {
     "name": "Lucija Tatarević",
-    "email": "lucija.tatarevic@five.agency"
+    "email": "lucija.tatarevic@gmail.com"
   },
   "license": "MIT",
   "config": {
